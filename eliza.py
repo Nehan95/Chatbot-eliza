@@ -4,21 +4,17 @@ Created on Tue Feb 19 08:10:24 2019
 
 @author: nagar
 """
-#Programming Assignment I - Eliza
-#Team Members: Neha Patil, Neha Nagarkar
-#Class: AIT 690
-# Date: February 19, 2019
 
 
-# The programming assignment is to build a chat bot named eliza which responds using word spotting
-#We have done word spotting using regular expressions
+# The program is a chat bot named eliza which responds using word spotting
+# word spotting using regular expressions
 # User input is required whenever the output screen says 'You:'
 #intially eliza will greet using current time from system and then ask for user name
 #once user enters name, the input is checked for matching regex; for a correct match , name of user is extracted from user input
 #then Eliza will ask next question and user has to answer the question, and the input is checked for matching regex 
 # for every correct match the regex is substituted by a set of responses
 #The loop will continue until the user says quit
-#We have added a functionality where eliza responds after 2 seconds delay to make it look like eliza is typing and then responding
+#d a functionality is added where eliza responds after 2 seconds delay to make it look like eliza is typing and then responding
 #Example conversation is given below
 ##############################################################
 
