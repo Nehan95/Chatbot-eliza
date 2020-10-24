@@ -1,0 +1,62 @@
+<html>
+<head>
+<title> Eliza </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+  text-align: right;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+</head>
+
+<body style="background-color:powderblue;text-align:center">
+<h1 style="color: purple;"> Eliza- The Pyshotherapist </h1>
+
+<div class="container darker">
+{{user_input}}<b > :You</b> 
+</div>
+<div class="container">
+<b>Eliza:</b> {{bot_response}}
+</div>
+
+
+<form action="/process" method="POST">
+<input type="text" name="user_input">
+<button type="submit"> send
+</form>
+
+
+<form action="/logout" method="POST">
+
+<button type="submit"> quit
+</form>
+
+
+</body>
+
+</html>
